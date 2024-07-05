@@ -1,0 +1,24 @@
+name: kabupaten_kota
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.4.1 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_html: ^3.0.0-beta.2
+  flutter_svg: ^2.0.10+1
+  http: ^1.2.1
+
+dev_dependencies:
+  flutter_lints: ^3.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+      - images/
