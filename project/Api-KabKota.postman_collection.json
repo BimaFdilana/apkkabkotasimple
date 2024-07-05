@@ -1,0 +1,388 @@
+{
+	"info": {
+		"_postman_id": "4f301a66-3bc0-4f13-bd73-69d92bfc886c",
+		"name": "Api-KabKota",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33102106"
+	},
+	"item": [
+		{
+			"name": "home",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host_url}}/home.php",
+					"host": [
+						"{{host_url}}"
+					],
+					"path": [
+						"home.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "readKabKota",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host_url}}/read_kabkota.php",
+					"host": [
+						"{{host_url}}"
+					],
+					"path": [
+						"read_kabkota.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "readKabKotaById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host_url}}/read_kabkota.php?id=1",
+					"host": [
+						"{{host_url}}"
+					],
+					"path": [
+						"read_kabkota.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createKabKota.php",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "kabupaten_kota",
+							"value": "Kota Surabaya",
+							"type": "text"
+						},
+						{
+							"key": "pusat_pemerintahan",
+							"value": "Surabaya",
+							"type": "text"
+						},
+						{
+							"key": "bupati_walikota",
+							"value": "Eri Cahyadi",
+							"type": "text"
+						},
+						{
+							"key": "tanggal_berdiri",
+							"value": "1293-05-31",
+							"type": "text"
+						},
+						{
+							"key": "luas_wilayah",
+							"value": "335.28",
+							"type": "text"
+						},
+						{
+							"key": "jumlah_penduduk",
+							"value": "2972801",
+							"type": "text"
+						},
+						{
+							"key": "jumlah_kecamatan",
+							"value": "31",
+							"type": "text"
+						},
+						{
+							"key": "jumlah_kelurahan",
+							"value": "163",
+							"type": "text"
+						},
+						{
+							"key": "jumlah_desa",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "url_peta_wilayah",
+							"value": "https://upload.wikimedia.org/wikipedia/commons/8/84/Indonesia_Surabaya_City_location_map.svg",
+							"type": "text"
+						},
+						{
+							"key": "deskripsi",
+							"value": "deskripsi kota Surabayo",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "postman-cloud:///1ef39ddb-bda5-4b60-a2a1-02cdadc35a58"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host_url}}/create_kabkota.php",
+					"host": [
+						"{{host_url}}"
+					],
+					"path": [
+						"create_kabkota.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateKabKota",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "13",
+							"type": "text"
+						},
+						{
+							"key": "kabupaten_kota",
+							"value": "Kota Surabaya",
+							"type": "text"
+						},
+						{
+							"key": "pusat_pemerintahan",
+							"value": "Surabaya",
+							"type": "text"
+						},
+						{
+							"key": "bupati_walikota",
+							"value": "Eri Cahyadi",
+							"type": "text"
+						},
+						{
+							"key": "tanggal_berdiri",
+							"value": "1293-05-31",
+							"type": "text"
+						},
+						{
+							"key": "luas_wilayah",
+							"value": "335.28",
+							"type": "text"
+						},
+						{
+							"key": "jumlah_penduduk",
+							"value": "2972801",
+							"type": "text"
+						},
+						{
+							"key": "jumlah_kecamatan",
+							"value": "31",
+							"type": "text"
+						},
+						{
+							"key": "jumlah_kelurahan",
+							"value": "163",
+							"type": "text"
+						},
+						{
+							"key": "jumlah_desa",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "url_peta_wilayah",
+							"value": "https://upload.wikimedia.org/wikipedia/commons/8/84/Indonesia_Surabaya_City_location_map.svg",
+							"type": "text"
+						},
+						{
+							"key": "deskripsi",
+							"value": "deskripsi kota Surabayo",
+							"type": "text"
+						},
+						{
+							"key": "logo",
+							"value": "surabaya.png",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "postman-cloud:///1ef39e06-2f8b-4a20-b0c8-f0ec8857f939"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host_url}}/update_kabkota.php",
+					"host": [
+						"{{host_url}}"
+					],
+					"path": [
+						"update_kabkota.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateKabKotaExcImage",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "14",
+							"type": "text"
+						},
+						{
+							"key": "kabupaten_kota",
+							"value": "Kota Surabaya",
+							"type": "text"
+						},
+						{
+							"key": "pusat_pemerintahan",
+							"value": "Surabaya",
+							"type": "text"
+						},
+						{
+							"key": "bupati_walikota",
+							"value": "Eri Cahyadi",
+							"type": "text"
+						},
+						{
+							"key": "tanggal_berdiri",
+							"value": "1293-05-31",
+							"type": "text"
+						},
+						{
+							"key": "luas_wilayah",
+							"value": "335.28",
+							"type": "text"
+						},
+						{
+							"key": "jumlah_penduduk",
+							"value": "2972801",
+							"type": "text"
+						},
+						{
+							"key": "jumlah_kecamatan",
+							"value": "31",
+							"type": "text"
+						},
+						{
+							"key": "jumlah_kelurahan",
+							"value": "163",
+							"type": "text"
+						},
+						{
+							"key": "jumlah_desa",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "url_peta_wilayah",
+							"value": "https://upload.wikimedia.org/wikipedia/commons/8/84/Indonesia_Surabaya_City_location_map.svg",
+							"type": "text"
+						},
+						{
+							"key": "deskripsi",
+							"value": "Kota Surabaya adalah ibu kota Provinsi Jawa Timur yang menjadi pusat pemerintahan dan perekonomian dari Provinsi Jawa Timur sekaligus kota terbesar di provinsi tersebut. Surabaya juga merupakan sebuah kota yang terletak di Provinsi Jawa Timur, Indonesia. Surabaya merupakan kota terbesar kedua di Indonesia setelah Kota Jakarta. Kota ini terletak 800 km sebelah timur Jakarta, atau 435 km sebelah barat laut Denpasar, Bali. Letak kota ini berada di pantai utara Pulau Jawa bagian timur yang berhadapan dengan Selat Madura serta Laut Jawa.\nSurabaya memiliki luas sekitar ±335,28 km², dan 2.972.801 jiwa penduduk pada tahun 2022.[7] Daerah megapolitan Surabaya yang berpenduduk sekitar 10 juta jiwa, adalah kawasan metropolitan terbesar kedua di Indonesia setelah Jabodetabek. Surabaya dan wilayah Gerbangkertosusila dilayani oleh sebuah bandar udara, yakni Bandar Udara Internasional Juanda yang berada 20 km di sebelah selatan kota, serta dua pelabuhan, yakni Pelabuhan Tanjung Perak dan Pelabuhan Ujung.\nSurabaya dikenal dengan sebutan Kota Pahlawan karena Pertempuran 10 November 1945, yaitu sejarah perjuangan Arek-Arek Suroboyo (Pemuda-pemuda Surabaya) dalam mempertahankan kemerdekaan bangsa Indonesia dari serangan penjajah. Surabaya juga sempat menjadi kota terbesar di Hindia Belanda dan menjadi pusat niaga di Nusantara yang sejajar dengan Hong Kong dan Shanghai pada masanya.[8] Menurut Bappenas, Kota Surabaya adalah salah satu dari empat kota pusat pertumbuhan utama di Indonesia, bersama dengan Medan, Jakarta, dan Makassar.",
+							"type": "text"
+						},
+						{
+							"key": "logo",
+							"value": "surabaya.png",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "postman-cloud:///1ef39e06-2f8b-4a20-b0c8-f0ec8857f939",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "{{host_url}}/update_kabkota.php",
+					"host": [
+						"{{host_url}}"
+					],
+					"path": [
+						"update_kabkota.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletedKabKota",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host_url}}/deleted_kabkota.php?id=14",
+					"host": [
+						"{{host_url}}"
+					],
+					"path": [
+						"deleted_kabkota.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "14"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
